@@ -1,0 +1,10 @@
+@use "presets/skin" as *;
+@use "presets/variables" as *;
+
+@use "mixins/mixins" as *;
+
+.header-overlay {
+    background-color: $color-primary;
+    @include abs-position;
+    opacity: 0.8;
+}

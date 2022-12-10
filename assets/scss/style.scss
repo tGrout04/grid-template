@@ -19,3 +19,7 @@
 @use "components/sections/section-posts";
 
 @use "components/footer/footer";
+
+@use "mixins/extends";
+@use "mixins/mixins";
+@use "mixins/mixins-media";

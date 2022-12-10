@@ -1,0 +1,7 @@
+@use "presets/skin" as *;
+@use "presets/variables" as *;
+
+.header-logo__link {
+    display: block;
+    padding: 20px;
+}

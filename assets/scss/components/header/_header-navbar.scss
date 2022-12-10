@@ -1,0 +1,14 @@
+@use "presets/skin" as *;
+@use "presets/variables" as *;
+
+@use "mixins/mixins" as *;
+
+.header-navbar {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+    @include unlist;
+  }
+}
