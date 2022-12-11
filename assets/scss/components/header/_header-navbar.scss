@@ -1,7 +1,5 @@
-@use "presets/skin" as *;
-@use "presets/variables" as *;
-
-@use "mixins/mixins" as *;
+@use "presets" as *;
+@use "mixins" as *;
 
 .header-navbar {
   &__list {

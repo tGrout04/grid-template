@@ -1,7 +1,5 @@
-@use "presets/skin" as *;
-@use "presets/variables" as *;
-
-@use "mixins/extends" as *;
+@use "presets" as *;
+@use "mixins" as *;
 
 .header-content {
   position: relative;

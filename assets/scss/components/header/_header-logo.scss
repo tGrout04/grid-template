@@ -1,5 +1,5 @@
-@use "presets/skin" as *;
-@use "presets/variables" as *;
+@use "presets" as *;
+@use "mixins" as *;
 
 .header-logo {
   font-size: 1.5rem;
