@@ -11,8 +11,16 @@
 
   background-color: rgba($color-white, 0.1);
   border: 2px solid $color-white;
-
   padding: 0.5em 1em;
+
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: $color-accent;
+  }
 
   &--light {}
 }

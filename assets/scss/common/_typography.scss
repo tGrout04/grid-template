@@ -10,6 +10,7 @@
 html {
   font-family: $font-main;
   font-size: $font-size;
+  overflow-y: scroll;
 }
 
 body {
@@ -18,8 +19,9 @@ body {
 }
 
 h1 {
-  font-size: 60px;
-  letter-spacing: 5px;
+  font-size: 3.75rem;
+  letter-spacing: 0.08em;
+  line-height: 1.2em;
   font-weight: 300;
   font-family: $font-header;
 }
