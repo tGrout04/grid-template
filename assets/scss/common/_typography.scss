@@ -19,12 +19,24 @@ body {
 }
 
 h1 {
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
   line-height: 1.2em;
   font-weight: 300;
   font-family: $font-header;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 40px;
+  }
+
+  @include md {
+    font-size: 30px;
+  }
 }
+
 
 h2 {
   font-family: $font-header;

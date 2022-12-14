@@ -3,14 +3,23 @@
 
 .skill-item {
   position: relative;
+  overflow: hidden;
 
   &__title {
     @include abs-position;
     margin: 0;
     z-index: 1;
 
-    font-size: 1.25rem;
+
     letter-spacing: 0.1em;
+
+    @include md-min {
+      font-size: 1.25rem;
+    }
+
+    @include md {
+      font-size: 1.125rem;
+    }
   }
 
   &__link {
@@ -19,6 +28,7 @@
     justify-content: center;
     padding: $gap;
     @include abs-position;
+    transition: color 0.5s;
   }
 
   &__image {
@@ -27,12 +37,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include abs-position;
+    transition: transform 0.5s;
   }
 
   &__overlay {
     background-color: $color-primary;
     @include abs-position;
     opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+
+  &:hover {
+    .skill-item__overlay {
+      opacity: 0.949;
+    }
+
+    .skill-item__image {
+      transform: scale(1.1);
+    }
+
+    .skill-item__link {
+      color: $color-accent;
+    }
   }
 
 }
