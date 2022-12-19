@@ -1,2 +1,40 @@
 @use "presets" as *;
 @use "mixins" as *;
+
+.form {
+  padding: 30px 0;
+  background-color: $color-primary;
+
+  &__container {
+    @extend %container;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap;
+  }
+}
+
+.form-item {
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 1px 30px;
+    letter-spacing: 0.15em;
+    font-size: 1.125rem;
+    color: $color-white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.05);
+    outline: none;
+  }
+}
+
+.form-item .btn--primary {
+  width: 100%;
+  height: 100%;
+  color: $color-white;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
