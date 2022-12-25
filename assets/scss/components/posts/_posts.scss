@@ -1,2 +1,107 @@
 @use "presets" as *;
 @use "mixins" as *;
+
+.posts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 20px;
+    gap: $gap;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.posts h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  color: $color-primary;
+  margin-bottom: 48px;
+}
+
+.post-item {
+  background-color: #eeeeee;
+  transition: background-color 0.5s;
+
+  &__link {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__image {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__image img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+
+  &__caption {
+    display: grid;
+    align-content: center;
+    padding: 20px;
+    color: $color-gray;
+  }
+
+  &__caption p {
+    line-height: 1.15rem;
+    color: $color-gray;
+    text-align: center;
+    transition: color 0.5s;
+  }
+
+  &:hover {
+    background-color: #d8d8d8;
+  }
+}
+
+.post-item:hover p {
+  color: $color-primary;
+}
+
+.post-item:hover .post-item__image img {
+  transform: scale(1.1);
+}
+
+.post-item:nth-of-type(1) {
+  grid-area: p1;
+}
+
+.post-item:nth-of-type(2) {
+  grid-area: p2;
+}
+
+.post-item:nth-of-type(3) {
+  grid-area: p3;
+}
+
+.post-item:nth-of-type(4) {
+  grid-area: p4;
+}
+
+.post-item:nth-of-type(5) {
+  grid-area: p5;
+}
+
+.post-item:nth-of-type(6) {
+  grid-area: p6;
+}

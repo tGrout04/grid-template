@@ -42,6 +42,21 @@ h2 {
   font-family: $font-header;
 }
 
+h3 {
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  line-height: 1.156em;
+  color: $color-gray;
+  font-weight: 700;
+  font-family: $font-header;
+  text-align: center;
+  transition: color 0.5s;
+}
+
+.post-item:hover h3 {
+  color: $color-primary;
+}
+
 a {
   text-decoration: none;
   color: $color-white;
