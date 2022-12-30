@@ -2,51 +2,47 @@
 @use "mixins" as *;
 
 .about {
-  background-color: $color-gray-light;
   letter-spacing: 0.055em;
+
+  background-color: $color-gray-light;
 
   @include lg-min {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
   @include lg-md {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-
   @include md {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   &__container {
-    @extend %container;
     display: grid;
+
+    @extend %container;
     gap: $gap-x5;
     grid-template-columns: 1fr 271px;
-
     @include lg-md {
       gap: $gap-x2;
       grid-template-columns: 1fr 271px;
     }
-
     @include md-sm {
       gap: $gap;
       grid-template-columns: 1fr 236px;
     }
-
     @include sm {
       gap: $gap;
       grid-template-columns: 1fr;
     }
   }
 
-  &__content {}
-
   &__image {
     display: grid;
     align-content: center;
+
     justify-items: center;
   }
 
@@ -57,74 +53,79 @@
 }
 
 .about h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1em;
-  line-height: 3rem;
-  color: $color-primary;
-  margin-bottom: 48px;
   margin-top: 0;
 
+  color: $color-primary;
+
   @include lg-min {
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    line-height: 3rem;
     margin-bottom: 48px;
-  }
 
+    letter-spacing: 0.1em;
+
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
   @include lg-md {
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-    line-height: 2.5rem;
     margin-bottom: 42px;
-  }
 
+    letter-spacing: 0.1em;
+
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
   @include md-sm {
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
-    line-height: 2rem;
     margin-bottom: 36px;
-  }
 
-  @include sm {
-    font-size: 1.5rem;
     letter-spacing: 0.1em;
+
+    font-size: 1.5rem;
     line-height: 2rem;
+  }
+  @include sm {
     margin-bottom: 36px;
+
     text-align: center;
+    letter-spacing: 0.1em;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 .about p {
-  color: $color-gray;
   margin-top: 0;
 
+  color: $color-gray;
+
   @include lg-min {
-    font-size: 1.125rem;
     letter-spacing: inherit;
+
+    font-size: 1.125rem;
     line-height: 1.15em;
   }
-
   @include lg-md {
+    letter-spacing: inherit;
+
     font-size: 1.125rem;
-    letter-spacing: inherit;
     line-height: 1.15em;
   }
-
   @include md-sm {
-    font-size: 1rem;
     letter-spacing: inherit;
+
+    font-size: 1rem;
     line-height: 1.15em;
   }
-
   @include sm {
-    font-size: 1rem;
     letter-spacing: inherit;
+
+    font-size: 1rem;
     line-height: 1.15em;
   }
 }
 
 .about__content p:first-of-type {
   position: relative;
+
   margin-top: -5px;
 }
 
@@ -136,19 +137,20 @@
   position: absolute;
   top: 0;
   right: -50px;
+
   width: 2px;
   height: 200px;
+
   content: "";
+
   background-color: rgba(99, 117, 136, 0.1);
 
   @include lg-md {
     right: -20px;
   }
-
   @include md-sm {
     right: -10px;
   }
-
   @include sm {
     display: none;
   }

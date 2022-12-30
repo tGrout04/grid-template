@@ -8,9 +8,10 @@
 }
 
 html {
+  overflow-y: scroll;
+
   font-family: $font-main;
   font-size: $font-size;
-  overflow-y: scroll;
 }
 
 body {
@@ -20,18 +21,17 @@ body {
 
 h1 {
   letter-spacing: 0.08em;
-  line-height: 1.2em;
-  font-weight: 300;
+
   font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
   }
-
   @include lg-md {
     font-size: 40px;
   }
-
   @include md {
     font-size: 30px;
   }
@@ -43,21 +43,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.125rem;
-  letter-spacing: 0.05em;
-  line-height: 1.156em;
-  color: $color-gray;
-  font-weight: 700;
-  font-family: $font-header;
-  text-align: center;
   transition: color 0.5s;
-}
+  text-align: center;
+  letter-spacing: 0.05em;
 
-.post-item:hover h3 {
-  color: $color-primary;
+  color: $color-gray;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.15em;
 }
 
 a {
   text-decoration: none;
+
   color: $color-white;
 }

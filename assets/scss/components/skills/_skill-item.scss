@@ -3,20 +3,20 @@
 
 .skill-item {
   position: relative;
+
   overflow: hidden;
 
   &__title {
-    @include abs-position;
-    margin: 0;
     z-index: 1;
 
+    margin: 0;
 
     letter-spacing: 0.1em;
 
+    @include abs-position;
     @include md-min {
       font-size: 1.25rem;
     }
-
     @include md {
       font-size: 1.125rem;
     }
@@ -26,25 +26,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: $gap;
-    @include abs-position;
+
     transition: color 0.5s;
+
+    @include abs-position;
   }
 
   &__image {
+    transition: transform 0.5s;
+
     background-color: $color-primary;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
+
     @include abs-position;
-    transition: transform 0.5s;
   }
 
   &__overlay {
-    background-color: $color-primary;
-    @include abs-position;
-    opacity: 0.8;
     transition: opacity 0.5s;
+
+    opacity: 0.8;
+    background-color: $color-primary;
+
+    @include abs-position;
   }
 
   &:hover {
@@ -60,7 +67,6 @@
       color: $color-accent;
     }
   }
-
 }
 
 $count: 9;
