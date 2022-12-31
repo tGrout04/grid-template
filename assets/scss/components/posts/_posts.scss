@@ -6,10 +6,12 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   @include lg-md {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
   @include md {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -27,21 +29,25 @@
     gap: $gap;
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
+
     @include lg-min {
       gap: $gap;
       grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
+
     @include lg-md {
       gap: $gap;
       grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
       grid-template-columns: repeat(3, 1fr);
     }
+
     @include md-sm {
       gap: $gap;
       grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
       grid-template-columns: repeat(2, 1fr);
     }
+
     @include sm {
       gap: $gap;
       grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
@@ -68,6 +74,7 @@
     font-size: 2.5rem;
     line-height: 3rem;
   }
+
   @include lg-md {
     margin-bottom: 42px;
 
@@ -76,6 +83,7 @@
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
   @include md-sm {
     margin-bottom: 36px;
 
@@ -84,6 +92,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
   @include sm {
     margin-bottom: 36px;
 
@@ -98,7 +107,7 @@
 .post-item {
   transition: background-color 0.5s;
 
-  background-color: #eeeeee;
+  background-color: $color-gray-light;
 
   &__link {
     display: grid;

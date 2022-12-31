@@ -625,7 +625,7 @@ a {
 
   letter-spacing: 0.3em;
 
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .footer__copy span:nth-of-type(2) {
@@ -825,7 +825,7 @@ a {
        -o-transition: background-color 0.5s;
           transition: background-color 0.5s;
 
-  background-color: #eeeeee;
+  background-color: #e5e5e5;
 }
 .post-item__link {
   display: grid;
