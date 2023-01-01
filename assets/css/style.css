@@ -825,7 +825,7 @@ a {
        -o-transition: background-color 0.5s;
           transition: background-color 0.5s;
 
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 .post-item__link {
   display: grid;
